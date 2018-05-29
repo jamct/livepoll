@@ -1,10 +1,9 @@
 FROM node:9
-RUN npm install -g nodemon
 
-WORKDIR /usr/app
+WORKDIR /usr/livepoll
 
-COPY ./src/package.json .
-RUN npm install --quiet
+COPY ./src .
+RUN npm install --quiet --production
 
 EXPOSE 8080
 CMD [ "node", "server.js" ]
