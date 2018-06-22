@@ -1,5 +1,9 @@
 # Live Poll
 
-This project will be a backend for live polling with MQTT end devices.
-Not ready for production at the moment!
+Live-Abstimmungen mit dem IoT Octopus.
+Die Firmware für die Platine finden Sie im Ordner iot.
+Starten Sie den Server mit
 
+```
+docker-compose up
+```
